@@ -18,7 +18,7 @@ class Pikachu:
         self.t = turtle.Turtle()
         t = self.t
         t.pensize(3)
-        t.speed(9)
+        t.speed(100)
         t.ondrag(getPosition)
 
     
