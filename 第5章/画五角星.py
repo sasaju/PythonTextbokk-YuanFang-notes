@@ -21,7 +21,7 @@ turtle.end_fill()
 turtle.penup()
 
 turtle.goto(-250, 200)
-turtle.write("红色五角星",  font=("宋体", 80, "normal"))    # 打印红色五角星字样
+turtle.write("红色五角星", font=("宋体", 80, "normal"))    # 打印红色五角星字样
 turtle.hideturtle()     # 隐藏小王八
 
 turtle.done()           # 让小王八画完之后不关闭

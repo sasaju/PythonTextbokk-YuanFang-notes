@@ -1,0 +1,4 @@
+简述：本章讲了os json pickle等标准库
+补充：对于ppt第32页：https://www.runoob.com/python/att-string-format.html
+    由于此章及以后的章节都不是考察的重点，本人不多废话。仅把课后题写了。
+    由于我把文件放在这层文件夹出了个bug所以我把它放在了上一层。
