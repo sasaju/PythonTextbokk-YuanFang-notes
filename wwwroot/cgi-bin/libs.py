@@ -1,9 +1,11 @@
+import cgi
 # 引入string库中的Template模块，用于模板字符串的替换
 from string import Template
 
-# get_header()函数用于读取模板文件header.html的内容
-# 并用参数title_txt(字符串数据)替换模板文件中的$title
 def get_header(title_txt):
+    """get_header()函数用于读取模板文件header.html的内容
+    并用参数title_txt(字符串数据)替换模板文件中的$title
+    """
     with open('template/header.html', 'r', encoding='utf-8') as f:
         txt = f.read()
     txt = Template(txt)         # 将字符串txt转换为Template类型对象
@@ -33,13 +35,13 @@ def show_data(filename):
     txt_table = '<table border="1" cellpadding="10" width="200px">'
     with open(filename, 'r', encoding='utf-8') as f:
         for line in f:
-            data-line.split(',')
+            data = line.split(',')
             txt_table += '<tr>'
             for item in data:
                 txt_table = txt_table + '<td align="center">' + item + '</td>'
-                txt_table += '</tr>'
-            txt_table += '</table>'
-            return txt_table
+            txt_table += '</tr>'
+    txt_table += '</table>'
+    return txt_table
 
 def start_form(act_url):
     """
